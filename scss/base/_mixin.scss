@@ -1,0 +1,13 @@
+//*Link de regreso al home y link registro*//
+@mixin return{
+    text-align: center;
+    margin:10px auto;
+    color:$colordark;
+    span{
+        a{
+            text-decoration: none;
+            color:$colordark;
+            font-weight: 700;
+        }
+    }
+}

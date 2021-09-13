@@ -1,0 +1,248 @@
+
+//*página Principal*//
+.slide{
+    margin: 80px auto 10px auto;
+}
+.articles{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to top,($colorlight),$bgcolor);
+    color: $colordark;
+    width:100vw;
+    .articles__novelties{
+        .novelties__title{
+            font-weight: 900;
+        }
+        .novelties__paragraph{
+            font-weight:900;  
+            letter-spacing: 2px;
+        }
+    }
+    .articles__body{
+        .articles__cards{
+            justify-content: center;
+            .cards__item{
+                max-width: 50%;
+                .cards__imag{
+                    margin: auto;
+                    border-radius: 10%;
+                    overflow: hidden;
+                    transition: all ease-out .3s;
+                    &:hover{
+                        transform: scale(1.03);
+                        box-shadow: 1px 3px 16px 0 #000;
+                    }
+                }
+                .cards__imag--new{ //*nuevo producto*//
+                    border:5px solid rgb(247, 1, 1);
+                }
+                .cards__body{
+                    .cards__paragraph {
+                        text-decoration: none;
+                        .cards__text{
+                            font-weight: 500;
+                        }
+                    }
+                }
+                @media screen and (min-width:576) {
+                    max-width: 100%;
+                }
+            }
+        }
+    } 
+    aside{
+        &.references{
+            .references__paragraph{
+                font-weight: 600;            
+            }
+            .references__body{                
+                .references__title h2{
+                    text-align: center;
+                
+                } 
+                .references__videos{
+                    padding: 15px;
+                    width: 100%;
+                    display: flex;
+                    flex-direction:column;
+                    align-items:center;
+                    .references__videos__item iframe{
+                        padding: 5px;
+                        width: 250px;
+                        height: 130px;
+                    }
+                }
+            }
+        }
+    }
+}  
+//*página de Contacto*//
+main{
+    &.main__contacto{
+        margin-top:80px;
+        text-align: center;
+        background: linear-gradient(to top,rgba(87, 51, 30, .001),rgb(184, 153, 95));
+        background-color: rgba(87, 51, 30, .5);
+        .contacto__title h1{
+            color:$colordark;
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            padding: 10px;
+            text-align: center;
+        }
+        .contacto__form{
+            max-width: 350px;
+            fieldset{
+                color:$colordark;
+            }
+        }
+        @media screen and (min: width 768px){
+            width: 50%;
+            margin: 80px auto;
+        }
+    }
+}
+.return{
+    @include return;
+}
+//*página de Productos*//
+.main__productos{
+    width: 100vw;
+    display: flex;
+    justify-content:center;
+    background: linear-gradient(to top,rgba(87, 51, 30, .001),rgb(184, 153, 95));
+    .accordion__container{
+        .accordion{
+            @extend%flexMain;
+            flex-direction:row;
+            height:25rem;
+            margin-top:-60px;
+            position: relative;
+            .accordion__item{
+                border: 1px solid $colordark;
+                max-width: 200px;
+                margin: auto;
+                background-color: $colorlight;
+                .accordion__header{
+                background-color: $colorlight;
+                color: $colorlight;
+                text-align:center;
+                .accordion__button{
+                        height: 10px;
+                        background-color: $colorlight;
+                    }
+                }
+                .accordion__collapse{
+                    position: absolute;
+                    .accordion__body{
+                        .accordion__submenu{
+                            li{
+                                a{
+                                    text-decoration:none;
+                                }
+                            }
+                        }
+                    }
+                    @media screen and (min-width: 768px){
+                        position: relative;
+                    }
+                }
+                 @media screen and (min-width: 768px){
+                    min-width:175px;
+                }
+            }
+        }
+    }
+    @media screen and (min-width: 768px){
+     align-items: space-between;   
+    }
+    .table__container{
+        @extend%flexMain;
+        .table__title{
+            color: $colordark;
+            text-align: center;
+            font-weight: 100;
+        }
+        .table{
+            color:$colordark;
+        }
+    }
+}
+//*pagina de ingreso*//
+main{
+    &.main__ingreso{
+        @extend%flexMain;
+        .ingreso__title h1{
+            color:$colordark;
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            padding: 10px;
+            text-align: center;
+        }
+        .ingreso__form{
+            max-width: 350px;
+            fieldset{
+                color:$colordark;
+            }
+        }
+        .ingreso__linkregistro{
+            @include return;
+            padding: 10px;
+        }
+        @media screen and (min: width 768px){
+            width: 50%;
+            margin: 80px auto;
+        }
+    }
+}
+//*página de registro*//
+main{
+    &.main__registro{
+        @extend%flexMain;
+        .registro__title h1{
+            color:$colordark;
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            padding: 10px;
+            text-align: center;
+        }
+        .registro__form{
+            max-width: 350px;
+        }
+        @media screen and (min: width 768px){
+            width: 50%;
+            margin: 80px auto;
+        }
+    }
+}
+//*pagina nosotros*//
+.main__nosotros{
+    @extend%flexMain;
+    .nosotros__historia{
+        width: 400px;
+        margin: auto;
+        .nosotros__title{
+            h1{
+                color:$colordark;
+                font-weight: 700;
+            }
+            .nosotros__paragraph{
+                color:$colordark;
+            }
+        }
+        @media screen and (min: width 768px){
+            width: 100%;
+        }
+    }
+    .nosotros__maps{
+        .maps__title{
+            color:$colordark;
+            iframe{
+                margin: auto;
+            }
+        }
+    }
+}

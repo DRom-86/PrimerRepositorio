@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- Css -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>DISTRIBUIDORA DROM | SIGN IN</title>
+    <meta name="description" content="Sign in a la cuenta de clientes de comercio de libreria y papelera para la realizacion de compras y solicitudes de contacto">
+    <meta name="keywords" content="cuenta compra catalogo productos artículos libreria comercio escolar comercial papelera mayorista descuento avon ezco exito rivadavia filgo faber simball sifap sta">
+</head>
+<body>
+    <header>
+    <!-- Nav bar -->
+        <nav class="navbar container-fluid fixed-top navbar-expand-md navbar-light">
+            <a class="navbar-brand d-flex navbar__logo" href="/index.html">
+                <img class="logo__imag" src="/multimedia/logo.jpg" alt="Logo de distribuidora drom">
+                <h1 class="logo__title">DISTRIBUIDORA LIBRERIA</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="menu mx-auto mb-2 mb-lg-0 w-75 d-flex justify-content-between">
+                    <li class="menu__item">
+                        <a class="menu__item__link active text-reset" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="menu__item dropdown">
+                        <a class="menu__item__link text-reset" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Productos</a>
+                        <ul class="submenu dropdown-menu position-absolute" aria-labelledby="navbarDropdown">
+                            <li class="submenu__item"><a class="dropdown-item text-reset" href="productos.html">Todos</a></li>
+                            <li class="submenu__item"><a class="dropdown-item text-reset" href="#">Escolar</a></li>
+                            <li class="submenu__item"><a class="dropdown-item text-reset" href="#">Comercial</a></li>
+                            <li class="submenu__item"><a class="dropdown-item text-reset" href="#">Papelera</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__item__link text-reset" href="contacto.html" >Contacto</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__item__link text-reset" href="ingreso.html" >Ingresar</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container main__ingreso">
+        <div class="ingreso__title">
+            <h2>Bienvenido</h2>
+        </div>
+        <!-- Formulario -->
+        <form class="ingreso__form">            
+            <fieldset class="container">
+                <legend>Ingrese sus datos</legend><br><br>
+                    <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Mantenerme conectado</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Ingresar</button>
+            </fieldset>
+        </form>
+        <div class="ingreso__linkregistro pb-3">
+            <span>No tenes cuenta?<a href="registro.html">Registrate</a></span>
+        </div>
+    </main>
+    <div class="return">
+        <span>Regresar a la <a href="/index.html">página principal</a></span>
+    </div>
+    <footer class="col-12">
+        <nav class="footer__nav">
+            <!-- links -->
+            <div class="footer__links">
+                <ul>
+                    <li><a href="ingreso.html">Sign In</a></li>
+                    <li><a href="nosotros.html">Historia</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div><hr>
+            <!-- redes sociales -->
+            <div class="footer__redes">
+                <div>
+                    <h4 class="footer__redes__title h5">Seguinos en las redes</h4><hr> 
+                </div>
+                <div class="footer__redes__links d-flex">
+                    <a href="https://facebook.com" target="_blank">
+                        <img src="/multimedia/logo-faceboock.png" alt="cuenta de Facebook">
+                    </a>
+                    <a href="https://instagram.com" target="_blank">
+                        <img src="/multimedia/logo-instagram.png" alt="cuenta de Instagram">
+                    </a>
+                    <a href="https://twitter.com" target="_blank">
+                        <img src="/multimedia/logo-twitter.png" alt="cuenta de Twitter">
+                    </a>
+                </div>
+            </div><hr>
+            <div class="footer__contacto">
+                <div class="footer__contacto__title">
+                    <h4 class="h5">Contacto</h4><hr>
+                </div>
+                <div>
+                    <ul class="footer__contacto__links">
+                        <li><a href="#">Email</a></li>
+                        <li><a href="#">Dirección</a></li>
+                        <li><a href="#">Telefono</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav><hr>
+        <div class="footer__copyright">
+            <small>Copyright © Todos los derechos reservados ▬ 2021 | Creado por DRom</small>
+        </div>
+    </footer>
+
+    <!-- scrip de Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <!-- script de fontawesome -->
+    <script src="https://kit.fontawesome.com/9419242be9.js"
+    crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+

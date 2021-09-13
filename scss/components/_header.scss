@@ -1,0 +1,31 @@
+.navbar{
+    background-color:$colordark;
+    box-shadow: 1px 3px 16px 0 #000;
+    color:$colorlight;
+    .navbar__logo{
+        align-items: baseline;
+        .logo__imag{
+            width: 30px;
+            height: 30px;
+            border-radius: 30%;
+        }
+        .logo__title {
+            font-size: 8px;
+            margin-left: 5px;
+            color:$colorlight;
+        }
+    }
+    .menu__item{
+        &:hover{color:$colorhover;
+        }
+        ul{
+            &.submenu{
+                background:$colordark;
+                color:$colorlight;
+                li{
+                    text-decoration: none;                    
+                }
+            }
+        }
+    } 
+}
