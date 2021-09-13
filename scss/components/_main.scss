@@ -223,6 +223,7 @@ main{
 //*pagina nosotros*//
 .main__nosotros{
     @extend%flexMain;
+    margin-top: 80px;
     .nosotros__historia{
         width: 400px;
         margin: auto;

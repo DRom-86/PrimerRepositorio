@@ -345,6 +345,10 @@ main.main__registro .registro__form {
   }
 }
 
+.main__nosotros {
+  margin-top: 80px;
+}
+
 .main__nosotros .nosotros__historia {
   width: 400px;
   margin: auto;
