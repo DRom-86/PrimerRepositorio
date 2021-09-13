@@ -13,6 +13,7 @@
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(87, 51, 30, 0.001)), to(#b8995f));
   background: linear-gradient(to top, rgba(87, 51, 30, 0.001), #b8995f);
   background-color: rgba(87, 51, 30, 0.5);
+  margin-top: 80px;
 }
 
 * {
