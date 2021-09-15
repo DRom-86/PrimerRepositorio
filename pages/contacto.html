@@ -35,11 +35,11 @@
                     <li class="menu__item dropdown">
                         <a class="menu__item__link text-reset" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Productos</a>
-                        <ul class="dropdown-menu position-absolute" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item text-reset" href="productos.html">Todos</a></li>
-                            <li><a class="dropdown-item text-reset" href="#">Escolar</a></li>
-                            <li><a class="dropdown-item text-reset" href="#">Comercial</a></li>
-                            <li><a class="dropdown-item text-reset" href="#">Papelera</a></li>
+                        <ul class="submenu dropdown-menu position-absolute" aria-labelledby="navbarDropdown">
+                            <li class="submenu__item"><a class="dropdown-item text-reset" href="productos.html">Todos</a></li>
+                            <li class="submenu__item"><a class="dropdown-item text-reset" href="#">Escolar</a></li>
+                            <li class="submenu__item"><a class="dropdown-item text-reset" href="#">Comercial</a></li>
+                            <li class="submenu__item"><a class="dropdown-item text-reset" href="#">Papelera</a></li>
                         </ul>
                     </li>
                     <li class="menu__item">
@@ -52,6 +52,9 @@
             </div>
         </nav>
     </header>
+    <div class="return">
+        <span><a href="/index.html">HOME</a> | Contacto</span><hr>
+    </div>
     <main class="container main__contacto">
         <div class="contacto__title">
             <h2>Contacto</h2>
@@ -105,9 +108,6 @@
             <input class="btn btn-primary" type="submit" value="Eviar Formulario"><br><br>
         </form><hr>
     </main>
-    <div class="return">
-        <span>Regresar a la <a href="/index.html">página principal</a></span>
-    </div>
     <footer class="col-12">
         <nav class="footer__nav">
             <!-- links -->

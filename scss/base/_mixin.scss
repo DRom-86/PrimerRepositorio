@@ -1,8 +1,8 @@
 //*Link de regreso al home y link registro*//
 @mixin return{
-    text-align: center;
-    margin:10px auto;
+    margin-left:20px;
     color:$colordark;
+    margin-top: 85px;
     span{
         a{
             text-decoration: none;

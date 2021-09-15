@@ -10,10 +10,17 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(87, 51, 30, 0.001)), to(#b8995f));
-  background: linear-gradient(to top, rgba(87, 51, 30, 0.001), #b8995f);
-  background-color: rgba(87, 51, 30, 0.5);
-  margin-top: 80px;
+}
+
+.btn {
+  background-color: #833539;
+  color: #ddc9d4;
+}
+
+.btn:hover {
+  background-color: #461b1b;
+  -webkit-box-shadow: 0px 0px 5px 2px #833539;
+          box-shadow: 0px 0px 5px 2px #833539;
 }
 
 * {
@@ -23,15 +30,12 @@
           box-sizing: border-box;
 }
 
-body {
-  background-color: #b8995f;
-}
-
 .navbar {
-  background-color: #57331e;
+  background: -webkit-gradient(linear, left bottom, left top, from(#521b1b), to(#833539));
+  background: linear-gradient(to top, #521b1b, #833539);
   -webkit-box-shadow: 1px 3px 16px 0 #000;
           box-shadow: 1px 3px 16px 0 #000;
-  color: #9b8453;
+  color: #ddc9d4;
 }
 
 .navbar .navbar__logo {
@@ -49,16 +53,16 @@ body {
 .navbar .navbar__logo .logo__title {
   font-size: 8px;
   margin-left: 5px;
-  color: #9b8453;
+  color: #ddc9d4;
 }
 
 .navbar .menu__item:hover {
-  color: #915c02;
+  color: #be888b;
 }
 
 .navbar .menu__item ul.submenu {
-  background: #57331e;
-  color: #9b8453;
+  background: #521b1b;
+  color: #ddc9d4;
 }
 
 .navbar .menu__item ul.submenu li {
@@ -76,9 +80,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: -webkit-gradient(linear, left bottom, left top, from(#9b8453), to(#b8995f));
-  background: linear-gradient(to top, #9b8453, #b8995f);
-  color: #57331e;
+  color: #521b1b;
   width: 100vw;
 }
 
@@ -118,8 +120,6 @@ body {
 }
 
 .articles .articles__body .articles__cards .cards__item .cards__imag--new {
-  /* 
-                    border:3px solid rgb(192, 19, 19); */
   -webkit-box-shadow: 6px 6px 2px 1px rgba(233, 0, 0, 0.2);
           box-shadow: 6px 6px 2px 1px rgba(233, 0, 0, 0.2);
 }
@@ -167,16 +167,27 @@ body {
   height: 130px;
 }
 
+/* Botones */
+/* Regreso al HOME */
+.return {
+  margin-left: 20px;
+  color: #521b1b;
+  margin-top: 85px;
+}
+
+.return span a {
+  text-decoration: none;
+  color: #521b1b;
+  font-weight: 700;
+}
+
 main.main__contacto {
   margin-top: 80px;
   text-align: center;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(87, 51, 30, 0.001)), to(#b8995f));
-  background: linear-gradient(to top, rgba(87, 51, 30, 0.001), #b8995f);
-  background-color: rgba(87, 51, 30, 0.5);
 }
 
 main.main__contacto .contacto__title h1 {
-  color: #57331e;
+  color: #521b1b;
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 2px;
@@ -189,7 +200,7 @@ main.main__contacto .contacto__form {
 }
 
 main.main__contacto .contacto__form fieldset {
-  color: #57331e;
+  color: #521b1b;
 }
 
 @media screen and (min: width 768px) {
@@ -199,64 +210,59 @@ main.main__contacto .contacto__form fieldset {
   }
 }
 
-.return {
-  text-align: center;
-  margin: 10px auto;
-  color: #57331e;
-}
-
-.return span a {
-  text-decoration: none;
-  color: #57331e;
-  font-weight: 700;
-}
-
 .main__productos {
   width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(87, 51, 30, 0.001)), to(#b8995f));
-  background: linear-gradient(to top, rgba(87, 51, 30, 0.001), #b8995f);
+}
+
+.main__productos .productos__title {
+  color: #521b1b;
+  text-align: center;
+  font-weight: 500;
 }
 
 .main__productos .accordion__container .accordion {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  height: 25rem;
-  margin-top: -60px;
-  position: relative;
+  -ms-flex-line-pack: start;
+      align-content: start;
+  padding: 10px auto;
+  height: 38rem;
 }
 
 .main__productos .accordion__container .accordion .accordion__item {
-  border: 1px solid #57331e;
+  border: 1px solid #521b1b;
   max-width: 200px;
   margin: auto;
-  background-color: #9b8453;
+  border: none;
 }
 
 .main__productos .accordion__container .accordion .accordion__item .accordion__header {
-  background-color: #9b8453;
-  color: #9b8453;
-  text-align: center;
+  text-align: left;
 }
 
 .main__productos .accordion__container .accordion .accordion__item .accordion__header .accordion__button {
+  background-color: #521b1b;
+  color: #ddc9d4;
   height: 10px;
-  background-color: #9b8453;
 }
 
 .main__productos .accordion__container .accordion .accordion__item .accordion__collapse {
-  position: absolute;
+  z-index: 10;
+  color: #521b1b;
+}
+
+.main__productos .accordion__container .accordion .accordion__item .accordion__collapse .accordion__body .accordion__submenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .main__productos .accordion__container .accordion .accordion__item .accordion__collapse .accordion__body .accordion__submenu li a {
+  text-align: left;
   text-decoration: none;
+  color: #521b1b;
 }
 
 @media screen and (min-width: 768px) {
@@ -267,30 +273,32 @@ main.main__contacto .contacto__form fieldset {
 
 @media screen and (min-width: 768px) {
   .main__productos .accordion__container .accordion .accordion__item {
-    min-width: 175px;
+    min-width: 170px;
+    margin: auto;
+    width: 98vw;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .main__productos {
+  .main__productos .accordion__container .accordion {
+    background-color: rgba(0, 0, 0, 0.1);
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-align: space-between;
         -ms-flex-align: space-between;
             align-items: space-between;
+    height: 12rem;
   }
 }
 
-.main__productos .table__container .table__title {
-  color: #57331e;
-  text-align: center;
-  font-weight: 100;
-}
-
 .main__productos .table__container .table {
-  color: #57331e;
+  color: #521b1b;
 }
 
 main.main__ingreso .ingreso__title h1 {
-  color: #57331e;
+  color: #521b1b;
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 2px;
@@ -303,19 +311,19 @@ main.main__ingreso .ingreso__form {
 }
 
 main.main__ingreso .ingreso__form fieldset {
-  color: #57331e;
+  color: #521b1b;
 }
 
 main.main__ingreso .ingreso__linkregistro {
-  text-align: center;
-  margin: 10px auto;
-  color: #57331e;
+  margin-left: 20px;
+  color: #521b1b;
+  margin-top: 85px;
   padding: 10px;
 }
 
 main.main__ingreso .ingreso__linkregistro span a {
   text-decoration: none;
-  color: #57331e;
+  color: #521b1b;
   font-weight: 700;
 }
 
@@ -327,7 +335,7 @@ main.main__ingreso .ingreso__linkregistro span a {
 }
 
 main.main__registro .registro__title h1 {
-  color: #57331e;
+  color: #521b1b;
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 2px;
@@ -356,12 +364,12 @@ main.main__registro .registro__form {
 }
 
 .main__nosotros .nosotros__historia .nosotros__title h1 {
-  color: #57331e;
+  color: #521b1b;
   font-weight: 700;
 }
 
 .main__nosotros .nosotros__historia .nosotros__title .nosotros__paragraph {
-  color: #57331e;
+  color: #521b1b;
 }
 
 @media screen and (min: width 768px) {
@@ -371,7 +379,7 @@ main.main__registro .registro__form {
 }
 
 .main__nosotros .nosotros__maps .maps__title {
-  color: #57331e;
+  color: #521b1b;
 }
 
 .main__nosotros .nosotros__maps .maps__title iframe {
@@ -380,8 +388,8 @@ main.main__registro .registro__form {
 
 footer {
   height: auto;
-  background: #000;
-  color: #fff;
+  background: #521b1b;
+  color: #ddc9d4;
   text-align: center;
 }
 
@@ -422,7 +430,7 @@ footer .footer__nav .footer__links ul {
 }
 
 footer .footer__nav .footer__links ul li a {
-  color: #fff;
+  color: #ddc9d4;
   text-decoration: none;
 }
 
@@ -448,7 +456,7 @@ footer .footer__nav .footer__redes .footer__redes__links {
 }
 
 footer .footer__nav .footer__redes .footer__redes__links a {
-  color: #fff;
+  color: #ddc9d4;
   text-decoration: none;
 }
 
@@ -485,12 +493,12 @@ footer .footer__nav .footer__contacto .footer__contacto__links {
 }
 
 footer .footer__nav .footer__contacto .footer__contacto__links li a {
-  color: #fff;
+  color: #ddc9d4;
   text-decoration: none;
 }
 
 footer .footer__nav .footer__contacto .footer__contacto__links li a:hover {
-  color: #915c02;
+  color: #be888b;
 }
 
 @media screen and (min-width: 576px) {

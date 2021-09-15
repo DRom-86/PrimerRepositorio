@@ -1,6 +1,8 @@
-$bgcolor:rgb(184, 153, 95);
-$colordark: rgb(87,51,30);
-$colorlight: rgb(155, 132, 83);
-$colorhover:rgb(145,92,2);
-$colorbgfooter:#000;
-$colortxtfooter:#fff;
+$txtcolor:rgb(221, 201, 212);
+$colordark: rgb(82, 27, 27);
+$colorlight: rgb(131, 53, 57);
+$colorhover:rgb(190, 136, 139);
+$colorbghover:rgb(70, 27, 27);
+$colorbgfooter:$colordark;
+$colortxtfooter:$txtcolor;
+$colorbgbtn:$colorlight;
