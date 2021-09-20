@@ -114,64 +114,42 @@ main{
 .main__productos{
     width: 100vw;
     .productos__title{
-        color: $colordark;
-        text-align: center;
-        font-weight: 500;
+        h2{
+            margin: 10px auto;
+            color: $colordark;
+            text-align: center;
+            font-weight: 500;
+        }
     }
-    .accordion__container{
-        .accordion{
-            @extend%flexMain;
-            align-content: start;
-            padding: 10px auto;
-            height: 38rem;
-            .accordion__item{
-                border: 1px solid $colordark;
-                max-width: 200px;
-                margin: auto;
-                border: none;
-                .accordion__header{
-                    text-align:left;
-                    .accordion__button{
-                        background-color: $colordark;
-                        color: $txtcolor;
-                        height: 10px;
-                    }
+    .container__menuProducto{
+        background-color: $colordark;
+        box-shadow: 1px 3px 16px 0 #000;
+        padding: 15px;
+        .menuProducto__lista{
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            .menu__item{
+                a{  
+                    color: $txtcolor;
+                    text-decoration: none;
                 }
-                .accordion__collapse{
-                    z-index: 10;
-                    color: $colordark;
-                    .accordion__body{
-                        .accordion__submenu{
-                            display: flex;
-                            flex-direction: column;
-                            li{
-                                a{
-                                    text-align:left;
-                                    text-decoration:none;
-                                    color:$colordark;
-                                }
-                            }
+                .submenu{
+                    border-left: 1px solid $txtcolor;
+                    .submenu__item{
+                        a{
+                            text-decoration: none;
                         }
+
                     }
-                    @media screen and (min-width: 768px){
-                        position: relative;
-                    }
-                }
-                @media screen and (min-width: 768px){
-                    min-width:170px;
-                    margin: auto;
-                    width: 98vw;
                 }
             }
+            
             @media screen and (min-width: 768px){
-                background-color: rgba(0, 0, 0, 0.1);
-                flex-direction: row;
-                align-items: space-between;
-                height: 12rem;              
-             
             }
         }
     }
+    /* Tabla de productos */
     .table__container{
         @extend%flexMain;
         .table{

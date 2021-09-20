@@ -1,4 +1,4 @@
-.main__productos .accordion__container .accordion, .main__productos .table__container, main.main__ingreso, main.main__registro, .main__nosotros {
+.main__productos .table__container, main.main__ingreso, main.main__registro, .main__nosotros {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -212,44 +212,24 @@ main.main__contacto .contacto__form fieldset {
 
 .main__productos {
   width: 100vw;
+  /* Tabla de productos */
 }
 
-.main__productos .productos__title {
+.main__productos .productos__title h2 {
+  margin: 10px auto;
   color: #521b1b;
   text-align: center;
   font-weight: 500;
 }
 
-.main__productos .accordion__container .accordion {
-  -ms-flex-line-pack: start;
-      align-content: start;
-  padding: 10px auto;
-  height: 38rem;
-}
-
-.main__productos .accordion__container .accordion .accordion__item {
-  border: 1px solid #521b1b;
-  max-width: 200px;
-  margin: auto;
-  border: none;
-}
-
-.main__productos .accordion__container .accordion .accordion__item .accordion__header {
-  text-align: left;
-}
-
-.main__productos .accordion__container .accordion .accordion__item .accordion__header .accordion__button {
+.main__productos .container__menuProducto {
   background-color: #521b1b;
-  color: #ddc9d4;
-  height: 10px;
+  -webkit-box-shadow: 1px 3px 16px 0 #000;
+          box-shadow: 1px 3px 16px 0 #000;
+  padding: 15px;
 }
 
-.main__productos .accordion__container .accordion .accordion__item .accordion__collapse {
-  z-index: 10;
-  color: #521b1b;
-}
-
-.main__productos .accordion__container .accordion .accordion__item .accordion__collapse .accordion__body .accordion__submenu {
+.main__productos .container__menuProducto .menuProducto__lista {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -257,40 +237,20 @@ main.main__contacto .contacto__form fieldset {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: auto;
 }
 
-.main__productos .accordion__container .accordion .accordion__item .accordion__collapse .accordion__body .accordion__submenu li a {
-  text-align: left;
+.main__productos .container__menuProducto .menuProducto__lista .menu__item a {
+  color: #ddc9d4;
   text-decoration: none;
-  color: #521b1b;
 }
 
-@media screen and (min-width: 768px) {
-  .main__productos .accordion__container .accordion .accordion__item .accordion__collapse {
-    position: relative;
-  }
+.main__productos .container__menuProducto .menuProducto__lista .menu__item .submenu {
+  border-left: 1px solid #ddc9d4;
 }
 
-@media screen and (min-width: 768px) {
-  .main__productos .accordion__container .accordion .accordion__item {
-    min-width: 170px;
-    margin: auto;
-    width: 98vw;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .main__productos .accordion__container .accordion {
-    background-color: rgba(0, 0, 0, 0.1);
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: space-between;
-        -ms-flex-align: space-between;
-            align-items: space-between;
-    height: 12rem;
-  }
+.main__productos .container__menuProducto .menuProducto__lista .menu__item .submenu .submenu__item a {
+  text-decoration: none;
 }
 
 .main__productos .table__container .table {
