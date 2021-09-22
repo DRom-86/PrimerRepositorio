@@ -19,27 +19,34 @@
             }
         }
     }
-    .menu__item{
-        a{
-            text-decoration: none;
-        }
-        &:hover{color:$colorhover;
-        }
-        ul{
-            &.submenu{
-                background:$colordark;
-                color:$txtcolor;
-                li{                    
-                    a{
-                        &:hover{
-                            background-color: $colordark;
+    .menu{
+        width: 100%;
+        padding: 10px;
+        .menu__item{
+            a{
+                text-decoration: none;
+            }
+            &:hover{color:$colorhover;
+            }
+            ul{
+                &.submenu{
+                    background:$colordark;
+                    color:$txtcolor;
+                    li{                    
+                        a{
+                            &:hover{
+                                background-color: $colordark;
+                            }
                         }
-                    }
-                    &:hover{
-                        color: $colorhover;
+                        &:hover{
+                            color: $colorhover;
+                        }
                     }
                 }
             }
         }
-    } 
+        @media screen and (min-width:576px){
+            max-width: 70%;
+        }
+    }
 }

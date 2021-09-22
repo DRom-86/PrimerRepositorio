@@ -62,25 +62,36 @@
   }
 }
 
-.navbar .menu__item a {
+.navbar .menu {
+  width: 100%;
+  padding: 10px;
+}
+
+.navbar .menu .menu__item a {
   text-decoration: none;
 }
 
-.navbar .menu__item:hover {
+.navbar .menu .menu__item:hover {
   color: #be888b;
 }
 
-.navbar .menu__item ul.submenu {
+.navbar .menu .menu__item ul.submenu {
   background: #521b1b;
   color: #ddc9d4;
 }
 
-.navbar .menu__item ul.submenu li a:hover {
+.navbar .menu .menu__item ul.submenu li a:hover {
   background-color: #521b1b;
 }
 
-.navbar .menu__item ul.submenu li:hover {
+.navbar .menu .menu__item ul.submenu li:hover {
   color: #be888b;
+}
+
+@media screen and (min-width: 576px) {
+  .navbar .menu {
+    max-width: 70%;
+  }
 }
 
 .slide {
