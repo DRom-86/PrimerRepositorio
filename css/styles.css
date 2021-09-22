@@ -51,9 +51,19 @@
 }
 
 .navbar .navbar__logo .logo__title {
-  font-size: 8px;
+  font-size: 10px;
   margin-left: 5px;
   color: #ddc9d4;
+}
+
+@media screen and (min-width: 576px) {
+  .navbar .navbar__logo .logo__title {
+    font-size: 8px;
+  }
+}
+
+.navbar .menu__item a {
+  text-decoration: none;
 }
 
 .navbar .menu__item:hover {
@@ -65,8 +75,12 @@
   color: #ddc9d4;
 }
 
-.navbar .menu__item ul.submenu li {
-  text-decoration: none;
+.navbar .menu__item ul.submenu li a:hover {
+  background-color: #521b1b;
+}
+
+.navbar .menu__item ul.submenu li:hover {
+  color: #be888b;
 }
 
 .slide {

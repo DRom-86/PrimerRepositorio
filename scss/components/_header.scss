@@ -10,20 +10,34 @@
             border-radius: 30%;
         }
         .logo__title {
-            font-size: 8px;
+            font-size: 10px;
             margin-left: 5px;
             color: $txtcolor;
+            @media screen and (min-width:576px) {
+                font-size: 8px;
+                
+            }
         }
     }
     .menu__item{
+        a{
+            text-decoration: none;
+        }
         &:hover{color:$colorhover;
         }
         ul{
             &.submenu{
                 background:$colordark;
                 color:$txtcolor;
-                li{
-                    text-decoration: none;                    
+                li{                    
+                    a{
+                        &:hover{
+                            background-color: $colordark;
+                        }
+                    }
+                    &:hover{
+                        color: $colorhover;
+                    }
                 }
             }
         }
