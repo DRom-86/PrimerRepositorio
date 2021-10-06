@@ -54,12 +54,9 @@
     aside{
         &.references{
             .references__paragraph{
-                font-weight: 600;            
+                font-weight: 700;            
             }
-            .references__body{                
-                .references__title h2{
-                    text-align: center;
-                } 
+            .references__body{     
                 .references__videos{
                     padding: 15px;
                     width: 100%;

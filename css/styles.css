@@ -164,11 +164,7 @@
 }
 
 .articles aside.references .references__paragraph {
-  font-weight: 600;
-}
-
-.articles aside.references .references__body .references__title h2 {
-  text-align: center;
+  font-weight: 700;
 }
 
 .articles aside.references .references__body .references__videos {
