@@ -6,8 +6,8 @@
 .articles{
     display: flex;
     justify-content: center;
-    color: $colordark;
-    width:100vw;
+    color: $colordark;/* 
+    width:100vw; */
     .articles__novelties{
         .novelties__title{
             font-weight: 900;

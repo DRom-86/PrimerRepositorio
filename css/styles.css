@@ -106,7 +106,8 @@
       -ms-flex-pack: center;
           justify-content: center;
   color: #521b1b;
-  width: 100vw;
+  /* 
+    width:100vw; */
 }
 
 .articles .articles__novelties .novelties__title {
@@ -365,6 +366,20 @@ main.main__registro .registro__form {
 
 .main__nosotros .nosotros__maps .maps__title iframe {
   margin: auto;
+}
+
+section.ribbon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.ribbon .ribbon__item {
+  max-width: 60px;
+  max-height: 30px;
 }
 
 footer {
