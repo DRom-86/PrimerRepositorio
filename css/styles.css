@@ -368,20 +368,6 @@ main.main__registro .registro__form {
   margin: auto;
 }
 
-section.ribbon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-section.ribbon .ribbon__item {
-  max-width: 60px;
-  max-height: 30px;
-}
-
 footer {
   height: auto;
   background: #521b1b;
