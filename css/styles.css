@@ -156,12 +156,6 @@
   font-weight: 500;
 }
 
-@media screen and (min-width: 576) {
-  .articles .articles__body .articles__cards .cards__item {
-    max-width: 100%;
-  }
-}
-
 .articles aside.references .references__paragraph {
   font-weight: 700;
 }
@@ -179,12 +173,21 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: 20px;
 }
 
 .articles aside.references .references__body .references__videos .references__videos__item iframe {
   padding: 5px;
   width: 250px;
   height: 130px;
+}
+
+@media screen and (min-width: 480px) {
+  .articles {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
 }
 
 /* Botones */
