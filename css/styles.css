@@ -234,7 +234,7 @@ main.main__contacto .contacto__form fieldset {
 }
 
 .main__productos {
-  width: 100vw;
+  width: 98%;
   /* Tabla de productos */
 }
 
@@ -249,7 +249,6 @@ main.main__contacto .contacto__form fieldset {
   background-color: #521b1b;
   -webkit-box-shadow: 1px 3px 16px 0 #000;
           box-shadow: 1px 3px 16px 0 #000;
-  padding: 15px;
 }
 
 .main__productos .container__menuProducto .menuProducto__lista {
@@ -338,7 +337,7 @@ main.main__registro .registro__form {
 }
 
 .main__nosotros {
-  margin-top: 80px;
+  margin-top: 60px;
   margin-bottom: 30px;
   color: #521b1b;
   -webkit-box-pack: center;
@@ -348,8 +347,7 @@ main.main__registro .registro__form {
 }
 
 .main__nosotros .nosotros__historia {
-  border: 1px solid #ff3d2f;
-  width: 350px;
+  width: 200px;
   text-align: center;
 }
 
@@ -385,7 +383,7 @@ main.main__registro .registro__form {
   margin-bottom: 15px;
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 768px) {
   .main__nosotros {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;

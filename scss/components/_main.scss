@@ -109,7 +109,7 @@ main{
 
 //*página de Productos*//
 .main__productos{
-    width: 100vw;
+    width:98%;
     .productos__title{
         h2{
             margin: 10px auto;
@@ -121,7 +121,6 @@ main{
     .container__menuProducto{
         background-color: $colordark;
         box-shadow: 1px 3px 16px 0 #000;
-        padding: 15px;
         .menuProducto__lista{
             display: flex;
             flex-direction: column;
@@ -203,14 +202,13 @@ main{
 //*pagina nosotros*//
 .main__nosotros{
     @extend%flexMain;
-    margin-top: 80px;
+    margin-top: 60px;
     margin-bottom: 30px;
     color:$colordark;
     justify-content: center;
     width: 100vw;
     .nosotros__historia{
-        border: 1px solid rgb(255, 61, 47);
-        width: 350px;
+        width: 200px;
         text-align: center;
         .nosotros__title{
             h1{
@@ -241,7 +239,7 @@ main{
             }
         }
     }
-    @media screen and (min-width: 576px){
+    @media screen and (min-width: 768px){
         flex-direction: row;
         align-items: flex-start;
         padding-left: 30px;
