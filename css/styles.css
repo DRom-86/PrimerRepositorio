@@ -365,15 +365,8 @@ main.main__registro .registro__form {
 }
 
 .main__nosotros .nosotros__maps {
-  width: 350px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  border: solid greenyellow;
+  width: 400px;
+  margin: auto;
 }
 
 .main__nosotros .nosotros__maps .maps__title {
@@ -388,7 +381,7 @@ main.main__registro .registro__form {
 }
 
 .main__nosotros .nosotros__maps .maps__container iframe {
-  margin: auto;
+  width: 100%;
 }
 
 .main__nosotros .nosotros__maps .maps__container .maps__details {

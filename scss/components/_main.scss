@@ -224,10 +224,8 @@ main{
         }
     }
     .nosotros__maps{
-        width: 350px;
-        display: flex;
-        flex-direction: column;
-        border: solid greenyellow;
+        width: 400px;
+        margin: auto;
         .maps__title{
             color:$colordark;
         }
@@ -236,7 +234,7 @@ main{
             padding-top: 15px;
             margin: 15px;
             iframe{
-                margin: auto;
+                width: 100%;
             }
             .maps__details{
                 margin-bottom: 15px;
