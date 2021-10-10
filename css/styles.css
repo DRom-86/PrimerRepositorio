@@ -388,6 +388,62 @@ main.main__registro .registro__form {
   margin-bottom: 15px;
 }
 
+/* Pagina 404 */
+.main__404 {
+  font-weight: 700;
+}
+
+.main__404 .title__404 {
+  letter-spacing: 2px;
+}
+
+.main__404 .paragraph__404 {
+  letter-spacing: 1.5px;
+}
+
+.main__404 .container__return {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main__404 .container__return .logo__return {
+  width: 30px;
+  height: 30px;
+  border-radius: 30%;
+}
+
+.main__404 .container__return .paragraph__return {
+  margin-left: 10px;
+}
+
+.main__404 .container__return .paragraph__return span {
+  color: #521b1b;
+}
+
+.main__404 .container__return .paragraph__return span a {
+  text-decoration: none;
+}
+
+.main__404 .return__options {
+  color: #521b1b;
+}
+
+.main__404 .return__options .options__title {
+  font-weight: 500;
+}
+
+.main__404 .return__options .options__links ul li a {
+  text-decoration: none;
+}
+
+.main__404 .return__options .options__links ul li a:hover {
+  color: #be888b;
+}
+
 footer {
   height: auto;
   background: #521b1b;

@@ -243,3 +243,51 @@ main{
         }
     }
 }
+
+/* Pagina 404 */
+.main__404{
+    font-weight: 700;
+    .title__404{
+        letter-spacing: 2px;
+    }
+    .paragraph__404{
+        letter-spacing: 1.5px;
+    }
+    .container__return{
+        display: flex;
+        justify-content: center;
+        .logo__return{
+            width: 30px;
+            height: 30px;
+            border-radius: 30%;
+        }
+        .paragraph__return{
+            margin-left: 10px;
+            span{
+                color:$colordark;
+                a{
+                    text-decoration: none;
+                }
+            }
+        }
+
+    }
+    .return__options{
+        color:$colordark;
+        .options__title{
+            font-weight: 500;
+        }
+        .options__links{
+            ul{
+                li{
+                    a{  
+                        text-decoration: none;  
+                        &:hover{
+                            color:$colorhover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
