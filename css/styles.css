@@ -162,7 +162,7 @@
 
 .articles aside.references .references__body .references__videos {
   padding: 15px;
-  width: 100%;
+  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -448,8 +448,8 @@ main.main__registro .registro__form {
 }
 
 footer {
+  border: 1px solid greenyellow;
   height: auto;
-  width: 100vw;
   background: #521b1b;
   color: white;
   text-align: center;
