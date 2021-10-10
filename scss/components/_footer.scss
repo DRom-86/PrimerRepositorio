@@ -3,6 +3,7 @@ footer{
     background: $colorbgfooter;
     color: $colortxtfooter;
     text-align: center;
+    box-shadow:1px -3px 16px #000;
     .footer__nav{
         display: flex;
         flex-direction:column;
@@ -11,8 +12,11 @@ footer{
         .footer__redes{
             text-align: center;
             .footer__redes__links{
+                width: 250px;
+                height: 100px;
                 display: flex;
                 justify-content: space-around;
+                align-items: center;
                 a{
                     color: $colortxtfooter;
                     text-decoration: none;
@@ -37,8 +41,11 @@ footer{
                         padding-bottom: 50px;
                     }
                     a{
-                        color: $colortxtfooter;
+                        color:$colortxtfooter;
                         text-decoration: none;
+                        &:hover{
+                            color:$colorhover;
+                        }
                     }
                 }
             }
@@ -54,7 +61,7 @@ footer{
                     @media screen and (min-width:576px){
                         padding-bottom: 35px;
                     }
-                        a{
+                    a{
                         color:$colortxtfooter;
                         text-decoration: none;  
                         &:hover{
@@ -71,7 +78,6 @@ footer{
         }
     }
     .footer__copyright{
-        padding: 5px;
-
+        padding-bottom: 10px;
     }
 }
