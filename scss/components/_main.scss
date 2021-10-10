@@ -207,9 +207,11 @@ main{
     margin-bottom: 30px;
     color:$colordark;
     justify-content: center;
+    width: 100vw;
     .nosotros__historia{
-        width: 400px;
-        margin: auto;
+        border: 1px solid rgb(255, 61, 47);
+        width: 350px;
+        text-align: center;
         .nosotros__title{
             h1{
                 color:$colordark;
@@ -219,29 +221,30 @@ main{
                 color:$colordark;
             }
         }
-        @media screen and (min: width 768px){
-            width: 100%;
-            padding-left: 20px;
+    }
+    aside{
+        width: 350px;
+        .nosotros__maps{
+            .maps__title{
+                color:$colordark;
+            }
+            .maps__container{
+                box-shadow: 0 5px 12px #000;
+                padding-top: 15px;
+                margin: 15px;
+                iframe{
+                    width: 95%;
+                }
+                .maps__details{
+                    margin-bottom: 15px;
+                }
+            }
         }
     }
-    .nosotros__maps{
-        width: 400px;
-        margin: auto;
-        .maps__title{
-            color:$colordark;
-        }
-        .maps__container{
-            box-shadow: 0 5px 12px #000;
-            padding-top: 15px;
-            margin: 15px;
-            iframe{
-                width: 100%;
-            }
-            .maps__details{
-                margin-bottom: 15px;
-
-            }
-        }
+    @media screen and (min-width: 576px){
+        flex-direction: row;
+        align-items: flex-start;
+        padding-left: 30px;
     }
 }
 

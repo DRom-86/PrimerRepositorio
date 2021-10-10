@@ -344,11 +344,13 @@ main.main__registro .registro__form {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100vw;
 }
 
 .main__nosotros .nosotros__historia {
-  width: 400px;
-  margin: auto;
+  border: 1px solid #ff3d2f;
+  width: 350px;
+  text-align: center;
 }
 
 .main__nosotros .nosotros__historia .nosotros__title h1 {
@@ -360,35 +362,40 @@ main.main__registro .registro__form {
   color: #521b1b;
 }
 
-@media screen and (min: width 768px) {
-  .main__nosotros .nosotros__historia {
-    width: 100%;
-    padding-left: 20px;
-  }
+.main__nosotros aside {
+  width: 350px;
 }
 
-.main__nosotros .nosotros__maps {
-  width: 400px;
-  margin: auto;
-}
-
-.main__nosotros .nosotros__maps .maps__title {
+.main__nosotros aside .nosotros__maps .maps__title {
   color: #521b1b;
 }
 
-.main__nosotros .nosotros__maps .maps__container {
+.main__nosotros aside .nosotros__maps .maps__container {
   -webkit-box-shadow: 0 5px 12px #000;
           box-shadow: 0 5px 12px #000;
   padding-top: 15px;
   margin: 15px;
 }
 
-.main__nosotros .nosotros__maps .maps__container iframe {
-  width: 100%;
+.main__nosotros aside .nosotros__maps .maps__container iframe {
+  width: 95%;
 }
 
-.main__nosotros .nosotros__maps .maps__container .maps__details {
+.main__nosotros aside .nosotros__maps .maps__container .maps__details {
   margin-bottom: 15px;
+}
+
+@media screen and (min-width: 576px) {
+  .main__nosotros {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-left: 30px;
+  }
 }
 
 /* Pagina 404 */
@@ -448,7 +455,7 @@ main.main__registro .registro__form {
 }
 
 footer {
-  border: 1px solid greenyellow;
+  width: 100vw;
   height: auto;
   background: #521b1b;
   color: white;
