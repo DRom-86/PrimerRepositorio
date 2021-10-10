@@ -449,6 +449,7 @@ main.main__registro .registro__form {
 
 footer {
   height: auto;
+  width: 100vw;
   background: #521b1b;
   color: white;
   text-align: center;
